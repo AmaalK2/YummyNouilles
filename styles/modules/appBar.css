@@ -1,0 +1,36 @@
+.appBar {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 1rem 3rem; /*écarter de la bonne distance les éléments de notre barre des contours de la page dans la 
+    class*/
+}
+
+.appBar__icon {  /*pour l'icone de la nav*/
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+
+
+.appBar__nav { /*placement des boutons de navigation dans l’AppBar.
+    Pour centrer les boutons, nous allons utiliser flex et align-items.*/
+    display: flex;
+    align-items: center;
+    padding-left: 2rem; /*espacer les boutons de la nav à l'icone vers la gauche avec le padding*/
+}
+
+.appBar__navItem { /*pour chacun de mes boutons de navigation*/
+    font-family: var(--title-font); /*/*police des titres*/
+    font-style: normal; -
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size); /*taille de police du body*/
+    line-height: var(--title-line-height); 
+    margin-right: 1rem; /*espace entre mes boutons*/
+}
+
+.appBar__navItem:hover, /* nous voulons que cette ligne ne s’affiche que dans deux cas :*/
+.appBar__navItem.active {
+  text-decoration: underline var(--red-highlight);
+  text-underline-offset: 0.25rem; /*décalage entre la sous-ligne et le texte*/
+  text-decoration-thickness: 0.188rem; /*epaisseur de la sous-ligne*/
+}

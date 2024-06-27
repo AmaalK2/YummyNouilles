@@ -1,0 +1,24 @@
+.hero {
+    display: flex; 
+    flex-direction: row; /*élément de la section en row*/
+    justify-content: center; /*centrer les élements de la section*/
+    margin-top: 6.5rem; /*margin afin de mettre un espace par le haut entre ma section et le header*/
+  }
+
+.hero__titleContainer {
+    padding: 2.75rem 7.5rem 0 0;
+  }
+
+.hero__title {   /*margin de mon titre*/
+    margin: 0 0 0.75rem 0;
+  }
+
+  .hero__subtitle { /*class qui agit sur le sous-titre de yummy nouilles, poids*/
+    margin: 0 0 2rem 0; 
+    font-weight: var(--body-highlight-font-weight);
+  }
+
+  .hero__icon {
+    width: 19rem;
+    height: 19rem;
+  }

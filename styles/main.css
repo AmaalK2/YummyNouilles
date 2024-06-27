@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap'); /*police 
+d'écriture importer*/
+
+
+/* Modules */
+@import 'modules/appBar.css';
+
+
+
+
+/*Pages*/
+@import 'pages/home.css';
+
+
+
+/* Design System = 
+Le Design System est un ensemble de variables, de composants et de concepts qui permettent de maintenir une cohérence 
+visuelle au sein d’un même projet. */
+
+:root {
+    /* Colors */
+    --red-highlight: #D2483D; /*rouge*/
+    --light-grey: #F3F3F3; /*gris-blanc*/
+    --black: #000000; /*noir*/
+    --white: #FFFFFF; /*blanc*/
+
+    /* Text configuration */
+    --body-font: 'Montserrat';        /*nom de la police du body*/
+    --body-highlight-font: 'Montserrat'; /*nom police hightlight du body*/
+    --header-font: 'Bebas Neue';  /*police du header*/
+    --title-font: 'Bebas Neue';/*police des titres*/
+
+    --body-font-weight: 400;           /*poids de la police du body*/
+    --body-highlight-font-weight: 600; /*poids de la police hightlight*/
+    --header-font-weight: 400; /*poids de la police du header*/
+    --title-font-weight: 400; /*poids de la police des titres*/
+
+    --body-font-size: 1.25rem; /*taille de police du body*/
+    --body-highlight-font-size: 1.25rem; /*taille de police du body hightlight*/
+    --header-font-size: 4.5rem; /*taille de police du header*/
+    --title-font-size: 1.5rem; /*taille de police du body*/
+
+    --body-line-height: 1.5rem; /*ligne du corps du body*/
+    --body-highlight-line-height: 1.5rem; /*ligne du corps du body hightlight*/
+    --header-line-height: 5.375rem; /*ligne du corps du header*/
+    --title-line-height: 1.75rem; /*ligne du corps des titres*/
+}
+
+body {
+    background-color: var(--light-grey); /*¨fond couleur du body = light-grey*/
+    font-family: var(--body-font); /*nom de la police  = montserrat*/
+    font-style: normal; 
+    font-weight: var(--body-font-weight); /*poids de la police = 400*/
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    color: var(--black);
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-style: normal;
+    font-weight: var(--header-font-weight);
+    font-size: var(--header-font-size);
+    line-height: var(--header-line-height);
+    color: var(--black);
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-height);
+    color: var(--black);
+    text-decoration: underline var(--red-highlight); /*sous-ligne sous titre h2*/
+    text-underline-offset: 0.25rem; /*décalage entre la sous-ligne et le texte*/
+    text-decoration-thickness: 0.188rem; /*epaisseur de la sous-ligne*/
+}
+
