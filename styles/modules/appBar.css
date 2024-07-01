@@ -26,6 +26,7 @@
     font-size: var(--title-font-size); /*taille de police du body*/
     line-height: var(--title-line-height); 
     margin-right: 1rem; /*espace entre mes boutons*/
+    color: var(--black);
 }
 
 .appBar__navItem:hover, /* nous voulons que cette ligne ne s’affiche que dans deux cas :*/
@@ -33,6 +34,7 @@
   text-decoration: underline var(--red-highlight);
   text-underline-offset: 0.25rem; /*décalage entre la sous-ligne et le texte*/
   text-decoration-thickness: 0.188rem; /*epaisseur de la sous-ligne*/
+  color: var(--black);
 }
 
 @media (max-width: 768px) {
