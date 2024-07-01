@@ -22,3 +22,108 @@
     width: 19rem;
     height: 19rem;
   }
+
+
+/*adress*/
+
+.address {   /*les éléments de ma section l'un un en dessous des autres*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 4.5rem;
+}
+
+.address__title { 
+    margin-bottom: 2.25rem;
+}
+
+.address__carousel {  /*les 3 parties de ma section (adresses de restaurants*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7rem;
+}
+
+.address__img { 
+    width: 19rem;
+    height: 13.5rem;
+    object-fit: cover;
+}
+
+
+/*section about*/
+
+.about {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.25rem;
+  }
+
+.about__title {  /*h2*/
+    margin-bottom: 1rem;
+  }
+
+.about__text {
+    margin: 0 0 0 0;
+    width: 85%; /*taille de mon texte en pourcentage*/
+}
+
+/*section social media*/
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+.socialMedia__title {
+    margin-bottom: 2.25rem;
+}
+
+.socialMedia__carousel { /*me permet de mettre met img grace au grid template columns*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*3 colonnes*/
+    grid-gap: 4.5rem; /*l'espace entre mes images*/
+}
+
+.socialMedia__img { 
+    width: 15.5rem;
+    height: 15.5rem;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .address {
+      margin-top: 4.5rem;
+    }
+    
+    .address__carousel {
+      grid-template-columns: 1fr;
+      grid-gap: 2.5rem;
+    }
+  
+    .address__img {
+      width: 16rem;
+      height: 11.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about__text {
+      max-width: 16rem;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .socialMedia {
+      margin-top: 2rem;
+    }
+  
+    .socialMedia__carousel {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
+  }

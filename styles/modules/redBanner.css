@@ -1,0 +1,24 @@
+.redBanner {  /*les elements de ma div seront l'un un en dessous des autres, centrer, fond de couleur rouge*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red-highlight);
+    color: var(--white); /*couleur de mon texte*/
+    padding: 3.75rem 0 3.75rem 0;
+}
+
+.redBanner__title {
+    font-weight: var(--body-hightlight-font-weight);
+    margin: 0 0 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .redBanner {
+      padding: 2.75rem 0 2.75rem 0;
+    }
+  
+    .redBanner__title {
+      margin-bottom: 2rem;
+    }
+  }

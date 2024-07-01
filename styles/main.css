@@ -4,12 +4,17 @@ d'écriture importer*/
 
 /* Modules */
 @import 'modules/appBar.css';
-
+@import 'modules/redBanner.css';
+@import 'modules/cta.css';
+@import 'modules/contactInfo.css';
+@import 'modules/footer.css';
 
 
 
 /*Pages*/
 @import 'pages/home.css';
+@import 'pages/menu.css';
+@import 'pages/contact.css';
 
 
 
@@ -77,3 +82,18 @@ h2 {
     text-decoration-thickness: 0.188rem; /*epaisseur de la sous-ligne*/
 }
 
+@media (max-width: 768px) { /*mobile*/
+    :root {
+      /* Mobile Variables */
+      --body-font-size: 1rem;
+      --body-highlight-font-size: 1rem;
+      --header-font-size: 2.5rem;
+      --title-font-size: 1.25rem;
+  
+      --body-line-height: 1.25rem;
+      --body-highlight-line-height: 1.25rem;
+      --header-line-height: 3rem;
+      --title-line-height: 1.5rem;
+    }
+  }
+  
